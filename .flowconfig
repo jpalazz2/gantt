@@ -1,8 +1,11 @@
 [ignore]
+.*/node_modules/fbjs/.*
 
 [include]
-../lib/js/*.js
+./lib/js/*.js
 
 [libs]
 
 [options]
+module.name_mapper='^UI\/\(.*\)$' -> '<PROJECT_ROOT>/lib/js/ui/\1'
+module.name_mapper='^CSS\/\(.*\)$' -> '<PROJECT_ROOT>/lib/css/\1'
