@@ -7163,7 +7163,7 @@ function updateLink(linkElement, obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(95);
+var content = __webpack_require__(96);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(56)(content, {});
@@ -9921,7 +9921,7 @@ module.exports = ReactPropTypesSecret;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(96);
+var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(56)(content, {});
@@ -9930,8 +9930,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./Flexbox.scss", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./Flexbox.scss");
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./Flexbox.scss", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./Flexbox.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -10307,7 +10307,7 @@ var Timeline = function (_React$Component) {
             { className: 'Timeline-plus' },
             _react2.default.createElement(
               _Button2.default,
-              null,
+              { onClick: this._onClick.bind(this) },
               '+'
             )
           )
@@ -10337,7 +10337,7 @@ exports = module.exports = __webpack_require__(34)();
 
 
 // module
-exports.push([module.i, ".GantApp-body {\n  width: 1000px;\n  margin: 0 auto; }\n", ""]);
+exports.push([module.i, ".Flexbox-container {\n  display: flex;\n  justify-content: space-around; }\n\n.Flexbox-container.Flexbox-wrap {\n  flex-wrap: wrap; }\n\n.Flexbox-container.Flexbox-nowrap {\n  flex-wrap: nowrap; }\n\n.Flexbox-container.Flexbox-reverse {\n  flex-wrap: reverse; }\n\n.Flexbox-container.Flexbox-row {\n  flex-direction: row; }\n\n.Flexbox-container.Flexbox-column {\n  flex-direction: column; }\n\n.Flexbox-container\n.Flexbox-item {\n  flex-grow: 1;\n  width: 100%; }\n", ""]);
 
 // exports
 
@@ -10351,7 +10351,7 @@ exports = module.exports = __webpack_require__(34)();
 
 
 // module
-exports.push([module.i, ".Timeline-root {\n  border: 1px solid black;\n  width: 300px;\n  height: 500px; }\n\n.Timeline-root\n.Timeline-plus {\n  text-align: center; }\n\n.Timeline-root\n.Timeline-input-root {\n  padding: 0px 5px; }\n\n.Timeline-root\n.Timeline-input {\n  box-sizing: border-box;\n  width: 100%; }\n\n.Timeline-root\n.Timeline-index {\n  flex-grow: 0;\n  display: inline-block;\n  text-align: center;\n  width: 15%; }\n\n.Timeline-header-root {\n  text-align: center; }\n\n.Timeline-header-root\n.Timeline-header-index {\n  width: 15%; }\n", ""]);
+exports.push([module.i, ".GantApp-body {\n  width: 1000px;\n  margin: 0 auto; }\n", ""]);
 
 // exports
 
@@ -10365,7 +10365,7 @@ exports = module.exports = __webpack_require__(34)();
 
 
 // module
-exports.push([module.i, ".Flexbox-container {\n  display: flex;\n  justify-content: space-around; }\n\n.Flexbox-container.Flexbox-wrap {\n  flex-wrap: wrap; }\n\n.Flexbox-container.Flexbox-nowrap {\n  flex-wrap: nowrap; }\n\n.Flexbox-container.Flexbox-reverse {\n  flex-wrap: reverse; }\n\n.Flexbox-container.Flexbox-row {\n  flex-direction: row; }\n\n.Flexbox-container.Flexbox-column {\n  flex-direction: column; }\n\n.Flexbox-container\n.Flexbox-item {\n  flex-grow: 1;\n  width: 100%; }\n", ""]);
+exports.push([module.i, ".Timeline-root {\n  border: 1px solid black;\n  width: 300px;\n  height: 500px; }\n\n.Timeline-root .Timeline-row,\n.Timeline-root .Timeline-header-root {\n  margin-bottom: 5px; }\n\n.Timeline-root\n.Timeline-plus {\n  text-align: center; }\n\n.Timeline-root\n.Timeline-input-root {\n  padding: 0px 5px; }\n\n.Timeline-root\n.Timeline-input {\n  box-sizing: border-box;\n  width: 100%; }\n\n.Timeline-root\n.Timeline-index {\n  flex-grow: 0;\n  display: inline-block;\n  text-align: center;\n  width: 15%; }\n\n.Timeline-header-root {\n  text-align: center; }\n\n.Timeline-header-root\n.Timeline-header-index {\n  width: 15%; }\n", ""]);
 
 // exports
 
@@ -22607,7 +22607,7 @@ module.exports = traverseAllChildren;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(94);
+var content = __webpack_require__(95);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(56)(content, {});
