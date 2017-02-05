@@ -1,0 +1,28 @@
+
+.Flexbox-container {
+  display: flex;
+}
+
+$wrap-types: wrap nowrap reverse;
+@each $wrap-type in $wrap-types {
+  .Flexbox-container
+  .Flexbox-#{$wrap-type} {
+    flex-wrap: $wrap-type;
+  }
+}
+
+$flex-directions: wrap nowrap reverse;
+@each $direction in $flex-directions {
+  .Flexbox-container
+  .Flexbox-#{$direction} {
+    flex-direction: $direction;
+  }
+}
+
+$flex-justifications: start end center between around;
+@each $justification in $flex-justifications {
+  .Flexbox-container
+  .Flexbox-#{$justification} {
+    justify-content: $justification;
+  }
+}

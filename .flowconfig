@@ -8,4 +8,5 @@
 
 [options]
 module.name_mapper='^UI\/\(.*\)$' -> '<PROJECT_ROOT>/lib/js/ui/\1'
-module.name_mapper='^CSS\/\(.*\)$' -> '<PROJECT_ROOT>/lib/css/\1'
+module.name_mapper='^.*\.s?css$' -> 'css-module-flow'
+module.name_mapper='^\(.*\)$' -> '<PROJECT_ROOT>/lib/js/\1'
