@@ -1,0 +1,18 @@
+.TimelineRow-root
+.TimelineRow-input-root {
+  padding: 0px 5px;
+}
+
+.TimelineRow-root
+.TimelineRow-input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.TimelineRow-root
+.TimelineRow-index {
+  flex-grow: 0;
+  display: inline-block;
+  text-align: center;
+  width: 15%;
+}

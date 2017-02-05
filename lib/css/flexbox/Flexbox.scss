@@ -1,28 +1,25 @@
 
 .Flexbox-container {
   display: flex;
+  justify-content: space-around;
 }
 
 $wrap-types: wrap nowrap reverse;
 @each $wrap-type in $wrap-types {
-  .Flexbox-container
-  .Flexbox-#{$wrap-type} {
+  .Flexbox-container.Flexbox-#{$wrap-type} {
     flex-wrap: $wrap-type;
   }
 }
 
-$flex-directions: wrap nowrap reverse;
+$flex-directions: row column;
 @each $direction in $flex-directions {
-  .Flexbox-container
-  .Flexbox-#{$direction} {
+  .Flexbox-container.Flexbox-#{$direction} {
     flex-direction: $direction;
   }
 }
 
-$flex-justifications: start end center between around;
-@each $justification in $flex-justifications {
-  .Flexbox-container
-  .Flexbox-#{$justification} {
-    justify-content: $justification;
-  }
+.Flexbox-container
+.Flexbox-item {
+  flex-grow: 1;
+  width: 100%;
 }
